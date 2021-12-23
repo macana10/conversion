@@ -6,12 +6,15 @@ output: html_document
 ---
 
 ```{r}
+## Agrego librerias
+
 library(tidyverse)
 ```
 
 
 ```{r}
 
+## Agrego funciones
 file_to_pdf <- function(file_input, dir_output) {
   soffice_path <- "C:\\Program Files\\LibreOffice\\program\\soffice.exe"
   command <- glue::glue("\"{soffice_path}\"",
@@ -22,6 +25,7 @@ file_to_pdf <- function(file_input, dir_output) {
 
 files<- list.files(pattern = "[.]docx")
 
+## Nos arroja el pdf
 
 for ( file in files ){
   
