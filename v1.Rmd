@@ -8,6 +8,8 @@ output: html_document
 ```{r}
 ## Agrego librerias
 
+library(dplyr)
+library(ggplot2)
 library(tidyverse)
 ```
 
