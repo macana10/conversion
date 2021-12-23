@@ -1,0 +1,27 @@
+---
+title: "Docx to pdf"
+author: "Matias"
+date: "23/12/2021"
+output: html_document
+---
+```{r}
+
+file_to_pdf <- function(file_input, dir_output) {
+  soffice_path <- "C:\\Program Files\\LibreOffice\\program\\soffice.exe"
+  command <- glue::glue("\"{soffice_path}\"",
+                        " --convert-to pdf --headless --outdir ",
+                        "\"{dir_output}\" \"{file_input}\"")
+  system(command)
+}
+
+files<- list.files(pattern = "[.]docx")
+
+
+for ( file in files ){
+  
+  file_to_pdf(file, getwd())
+}
+
+```
+
+
