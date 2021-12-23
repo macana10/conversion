@@ -1,6 +1,6 @@
 ---
-title: "Docx to pdf"
-author: "Matias"
+title: "Doc to pdf"
+author: "Matias Cana"
 date: "23/12/2021"
 output: html_document
 ---
