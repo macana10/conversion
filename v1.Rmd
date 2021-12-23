@@ -4,6 +4,12 @@ author: "Matias Cana"
 date: "23/12/2021"
 output: html_document
 ---
+
+```{r}
+library(tidyverse)
+```
+
+
 ```{r}
 
 file_to_pdf <- function(file_input, dir_output) {
