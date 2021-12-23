@@ -8,7 +8,7 @@ output: html_document
 ```{r}
 ## Agrego librerias
 
-library(rvest)
+library(readr)
 library(ggplot2)
 library(tidyverse)
 ```
@@ -38,7 +38,9 @@ for ( file in files ){
 
 
 ```{r}
-##Conclusiones sobre el script
+
+##Conclusion
+
 
 "Este script se ha hecho con el objetivo de ayudar a mi madre, la cual es maestra y tenía que pasar varios archivos .doc a .pdf"
 ```
